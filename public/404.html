@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>페이지를 찾을 수 없습니다 - Jinosoft</title>
+    <meta name="description" content="요청하신 페이지를 찾을 수 없습니다. Jinosoft 홈으로 이동하여 더 많은 정보를 확인해 보세요.">
+    <meta name="theme-color" content="#101418">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css?v=1.0.1">
+    <style>
+      .error-container {
+        min-height: calc(100vh - 90px - 120px); /* Adjust based on header & footer height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 140px 24px 80px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .error-code {
+        font-size: clamp(80px, 10vw, 120px);
+        font-weight: 900;
+        line-height: 1;
+        background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0 0 16px;
+        letter-spacing: -0.05em;
+      }
+      .error-title {
+        font-size: clamp(22px, 3vw, 32px);
+        font-weight: 800;
+        color: var(--ink);
+        margin: 0 0 16px;
+        letter-spacing: -0.03em;
+      }
+      .error-desc {
+        font-size: 16px;
+        color: var(--muted);
+        line-height: 1.6;
+        margin: 0 0 36px;
+        word-break: keep-all;
+      }
+      .error-btn {
+        background: var(--ink) !important;
+        color: #fff !important;
+        border: 1px solid var(--ink) !important;
+        padding: 12px 28px !important;
+        font-size: 16px !important;
+        transition: background 0.2s ease, transform 0.1s ease !important;
+      }
+      .error-btn:hover {
+        background: var(--blue) !important;
+        border-color: var(--blue) !important;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="/">
+        <img class="brand-logo" src="/assets/ci-jinosoft.svg" alt="" aria-hidden="true">
+        <span class="sr-only">Jinosoft</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <a href="/#company">소개</a>
+        <div class="nav-dropdown" data-dropdown>
+          <button class="nav-menu-button" type="button" aria-expanded="false" aria-controls="apps-menu" data-dropdown-button>
+            앱
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="dropdown-menu" id="apps-menu">
+            <a href="/apps/locksheet/">
+              <span>LockSheet</span>
+              <small>비밀번호 관리</small>
+            </a>
+            <a href="/apps/beecabi/">
+              <span>Beecabi</span>
+              <small>반려동물 기록</small>
+            </a>
+          </div>
+        </div>
+        <a href="/#updates">업데이트</a>
+        <a href="/#support">문의</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">페이지를 찾을 수 없습니다</h1>
+        <p class="error-desc">
+          요청하신 페이지의 주소가 잘못 입력되었거나,<br>
+          변경 혹은 삭제되어 현재 접근할 수 없습니다.
+        </p>
+        <p>
+          <a class="button error-btn" href="/">홈으로 이동</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> Jinosoft</span>
+      <a href="mailto:support@jinosoft.com">support@jinosoft.com</a>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>

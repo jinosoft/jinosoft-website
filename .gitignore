@@ -1,0 +1,10 @@
+/tmp/
+/backup_pngs/
+/node_modules/
+/.firebase/
+/.env
+/.env.*
+!/.env.example
+*.log
+.DS_Store
+Thumbs.db

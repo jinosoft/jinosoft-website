@@ -1,0 +1,15 @@
+{
+  "name": "Jinosoft",
+  "short_name": "Jinosoft",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f8f7",
+  "theme_color": "#101418",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
