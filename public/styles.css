@@ -367,6 +367,27 @@ button {
   gap: 8px;
 }
 
+.language-switch {
+  display: inline-flex;
+  flex: none;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+.site-nav .language-switch a {
+  min-height: 32px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.site-nav .language-switch a[aria-current="page"] {
+  background: var(--ink);
+  color: #fff;
+}
+
 .site-nav a,
 .nav-menu-button {
   display: inline-flex;
@@ -1370,13 +1391,15 @@ button {
   .product-showcase { grid-template-columns: minmax(0, 1fr) 280px; }
   .product-screen img { width: 210px; }
 }
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .site-header { min-height: 76px; }
   .site-header::before { height: 76px; }
   .nav-toggle { display: inline-block; }
   .site-nav { position: fixed; top: 76px; left: 20px; right: 20px; display: none; max-height: calc(100dvh - 92px); overflow-y: auto; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
   .site-header.nav-open .site-nav { display: grid; }
   .site-nav a, .nav-menu-button { justify-content: flex-start; min-height: 44px; }
+  .language-switch { width: max-content; margin: 8px 0 0 10px; }
+  .site-nav .language-switch a { justify-content: center; min-height: 32px; }
   .nav-dropdown { display: grid; }
   .dropdown-menu { position: static; display: none; min-width: 0; opacity: 1; pointer-events: auto; box-shadow: none; transform: none; }
   .nav-dropdown:hover .dropdown-menu, .nav-dropdown:focus-within .dropdown-menu { display: none; }

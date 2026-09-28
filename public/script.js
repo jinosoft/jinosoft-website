@@ -72,9 +72,9 @@
 
       try {
         await navigator.clipboard.writeText(value);
-        copyButton.textContent = "복사됨";
+        copyButton.textContent = copyButton.dataset.copySuccess || "복사됨";
       } catch (error) {
-        copyButton.textContent = "메일 주소 확인";
+        copyButton.textContent = copyButton.dataset.copyError || "메일 주소 확인";
       }
 
       window.setTimeout(() => {
