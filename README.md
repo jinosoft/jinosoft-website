@@ -1,6 +1,6 @@
-# JinoSoft Website
+# Jinosoft Website
 
-Static company website for JinoSoft, including LockSheet and Beecabi pages.
+Static company website for Jinosoft, including LockSheet and Beecabi pages.
 Production domain: https://jinosoft.com/
 
 ## GitHub Pages
